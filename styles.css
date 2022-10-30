@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-size: 0.875em;
+    font-family: 'Fraunces', serif;
+    background-color: var(--cream);
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.centerItemsHoriz{
+    justify-content: center;
+}
+
+.centerItemsVert{
+    align-items: center;
+}
+
+.gap{
+    gap: 5%;
+}
+
+.cyan-txt{
+    color: var(--dark-cyan);
+}
+
+.light-txt{
+    color: var(--dark-grayish-blue);
+}
+
+#preview-card{
+    margin: 200px auto;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: fit-content;
+    width: min(600px, 90%);
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#product-img{
+    width: 100%;
+}
+
+#content{
+    padding: 10%;
+    background-color: var(--white);
+}
+
+button{
+    color: white;
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+@media only screen and (max-width: 650px) {
+    #preview-card{
+        margin-top: 10%;
+        grid-template-columns: 1fr;
+    }
+}
+  
